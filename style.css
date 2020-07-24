@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #152535;
+    overflow-x: hidden;
+}
+
+
+
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/*navbar ---*/
+
+.navbar {
+    background-color: #203345 !important;
+}
+
+
+.brand {
+    width: 120px;
+    height: 100%;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+    border-top: skyblue 2px solid;
+    text-align: left;
+    width: 60%;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text-field {
+    border: none;
+
+    color:  white;
+    border-radius: 5%;
+    background-color: #152535;
+    transition: all 1s;
+}
+
+.icon {
+    position: relative;
+    top: 2px;
+    right: 40px;
+    color: gray;
+    font-size: 18px;
+}
+
+.address-book {
+    position: relative;
+    padding-right: 4%;
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.address-book:hover {
+    color: white;
+}
+
+
+/* Poster ---*/
+
+.banner {
+    height: 100vh;
+    padding: 0;
+}
+
+.poster {
+    left: 2%;
+}
+
+.content p {
+    color: white;
+    font-size: 18px;
+}
+
+/* media query */
+@media only screen and (max-width : 1000px) {
+    .poster_img {
+        display: none;
+    }
+}
+
+
+/*favourites */
+.heading {
+    color: whitesmoke;
+    border-left: 5px solid whitesmoke;
+    border-block-style: solid;
+}
+.section img {
+    width: 300px;
+    height: 180px;
+    border-radius: 2%;
+    box-shadow: 0 0 8px 0 #000000;
+}
+
+.language img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/*media queries */
+
+@media screen and (max-width : 576px){
+    .heading{
+        margin-top : -170px;
+        margin-left : 0;
+        
+    }
+}
+
+@media screen and (min-width : 576px){
+    .heading{
+        margin-top : -140px;
+        margin-left : 10px;
+        
+    }
+}
+
+@media screen and (min-width : 760px){
+    .heading{
+        margin-top : -70px;
+        margin-left : 10px;
+    }
+}
+
+@media screen and (min-width : 992px){
+    .heading{
+        margin-top : -100px;
+        margin-left : 10px;
+    }
+}
+
+@media screen and (min-width : 1200px){
+    .heading{
+        margin-top : -70px;
+    }
+}
+
+/*------------*/
+
+
+
+:root {
+    --clr-dark: #3c3c3c;
+    --clr-gray: #9c9c9c;
+    --clr-light: #203345;
+    --transition: all  0.4s;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: var(--transition);
+}
+.card-body {
+    padding: 0!important;
+}
+.card:hover {
+    transform: scale(1.23);
+    z-index: 10;
+}
+.card .card-image {
+    position: relative;
+    width: 100%;
+}
+
+.card-footer {
+    
+    position: absolute;
+    height: 200px;
+    bottom: 5px;
+    width: 100%;
+    border-radius: 5%;
+    background: var(--clr-light);
+    align-items: center;
+    transition: var(--transition);
+    visibility: visible;
+}
+.card-footer__info {
+    /*padding: 5px;*/
+}
+.card-footer__title {
+    justify-content: space-around;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.card-footer__info small {
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+.card:hover .card-footer {
+    bottom: -75px;
+    box-shadow: 0 15px 12px -7px rgba(0, 0, 0, .1);
+    z-index: -2;
+    visibility: visible;
+}
+
+/*Effect 3*/
+.card.effect3 .card-header, .card.effect3 .card-footer {
+    left: 15px;
+    right: 15px;
+    height: 140px;
+    width: calc(100% - 30px);
+}
+.card.effect3:hover .card-footer {
+    bottom: -130px;
+}
+
+
+
+/*top rated*/
+
+.rated img {
+    margin-left: 2%;
+    border-radius: 2%;
+}
+.rated .material-icons {
+    color: yellow;
+}
+
+
+
+/*footer*/
+.footer{
+    margin-top: 5%;
+    background-color: #203345;
+    color: gray;
+}
+.icon-wrapper {
+    display: flex;
+}
+.icon-wrapper img {
+    margin-right: 15%;
+    width: 20px;
+    height: 20px;
+    border-radius: 10%;
+}
+.links{
+    padding: 0 20%;
+}
+.logo img{
+    width: 150px;
+    height: 40px;
+}
+
